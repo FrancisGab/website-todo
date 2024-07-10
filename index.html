@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-header">
+        <h1>Website Todo</h1>
+      </div>
+      <div class="todo-container">
+        <ul class="todo-list" id="todo-list">
+          <li><input type="checkbox" />Eat</li>
+          <!-- Existing list items here -->
+        </ul>
+
+        <form class="todo-form" id="todo-form">
+          <input
+            type="text"
+            class="new-todo-input done"
+            id="new-todo-input"
+            placeholder="Add new task..."
+            required
+          />
+          <div class="todo-buttons">
+            <button class="todo-button" id="save-task-button" type="submit">
+              + Save Task
+            </button>
+            <button class="todo-button" id="remove-task-button" type="button">
+              - Remove Task
+            </button>
+            <button
+              class="todo-button"
+              id="toggle-done-task-button"
+              type="button"
+            >
+              Toggle Done Task
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="myScript.js"></script>
+  </body>
+</html>
